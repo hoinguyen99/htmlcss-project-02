@@ -4,6 +4,10 @@
 html{
     font-size: 62.5%;
 }
+:root{
+    --primary:#ffb900;
+    --font-heading:Sen, sans-serif;
+}
 body{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
@@ -24,22 +28,26 @@ a{
     font-size: 1.6rem;
     text-align: center;
     color: #FFFFFF;
-    border-radius: 24.5px ;
+    border-radius: 999px ;
     background: #171100;
-    padding: 0 12px;
+    padding: 0 16px;
     line-height: 50px;
     min-width: 118px;
+}
+.btn:hover{
+    opacity: 0.9;
 }
 /* header */
 .header{
     position: sticky;
-    top: 4px;
+    top: 0px;
     background: #FFFCF4;
+    z-index: 1;
 }
 .header .content{
     display: flex;
     align-items: center;
-    margin: 36px 0 8px;
+    padding: 36px 0 8px;
 }
 .nav{
     margin-left: auto;
@@ -76,5 +84,164 @@ a{
 }
 .header .btn{
     width: 144px;
-    
+}
+/* hero */
+.hero{
+    padding-top:56px ;
+    background: #FFFCF4;
+}
+.hero .content{
+    display: flex;
+}
+.hero .media-block {
+    width: 50%;
+    position: relative;
+}
+.hero .media-block .img1{
+    width: 470px;
+    height: 685px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.hero .content-block {
+    width: 50%; 
+    position: relative;
+}
+.hero .summary{
+    position: absolute;
+    width: 270px;
+    /* height: 244px; */
+    bottom: 48px;
+    left: 300px;
+    border-radius: 12px ;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+
+}
+.hero .summary .item{
+    margin-top: 14px;   
+    display: flex;
+}
+.hero .info{
+    margin-left: 16px;
+}
+.hero .summary .item .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+.hero .summary .item .icon1{
+    background: #FFF9E8;
+}
+.hero .summary .item .icon2{
+    background: #FCEFFF;
+}
+.hero .summary .item .icon3{
+    background: #EBEAFF;
+}
+
+.hero .label{
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+.hero .title{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+.hero .content-block .content-box{
+    width: 470px;
+    right: 0px;
+    position: absolute;
+}
+.hero .content-block h1{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+.hero .content-block .desc1{
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    margin-top: 22px;
+}
+.hero .content-block .btn{
+    width: 180px;
+    height: 64px;
+    border-radius: 32px;
+    background: var(--primary);
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .content-block .cta-group{
+    display: flex;
+    margin-top: 38px;
+}
+.hero .content-block .cta-group .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 28px;
+}
+.hero .content-block .cta-group .button samp{
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+.hero .content-block .cta-group .button .play{
+    width: 40px;
+    height: 40px;
+    opacity: 0px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px 0px #00000012;
+
+
+}
+.hero .content-block .desc2{
+    margin-top: 48px;
+
+}
+.hero .content-block .desc3{
+    margin-top: 8px;
+}
+.hero .content-block .desc3{
+    margin-top: 8px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-left: -28px;
+}
+.hero .content-block .desc3 strong{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.22; /* 122.727% */
+    margin:0 5px 0 28px;
 }
