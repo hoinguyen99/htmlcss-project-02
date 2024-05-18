@@ -336,7 +336,7 @@ a {
     margin-left: -1px;  
 }
 .popular-bottom .item .info{
-    margin: 16px 22px 22px 22px;
+    padding: 16px 22px 22px ;
     width: 100%;
 }
 .popular-bottom .item h3{
@@ -400,18 +400,24 @@ a {
 .feedback{
     background: #2E2100;
     margin-top: 200px;
-    height: 380px;
 }
 .feedback .content{
     display: flex;
-    justify-content: space-between;
     margin-top: 124px;
+    overflow: hidden;
+    
+}
+.feedback .content .item{
+    display: flex;
+    padding: 96px 0;
+    flex-shrink: 0;
+    width: 100%;
     
 }
 .feedback .item-list{
     width: 34%;
     height: 188px;
-    margin-top: 96px;
+    
 }
 .feedback .item-list .img-1{
     object-fit: cover;
@@ -448,16 +454,14 @@ a {
     background: #634700;
 
 }
-
-.feedback .item-list .dot-list .dot:hover{
-     background: var(--primary);
-    
+.feedback .item-list .dot-list .dot-1{
+    background: #FFB900;
 }
+
 .feedback .info{
     width: 66%;
     height: 160px;
     position: relative;
-    top: 128px;
 
 }
 .feedback .info .quotes{
@@ -471,4 +475,54 @@ a {
     position: absolute;
     left: -30px;
     top: -28px;
+}
+/* features */
+.features{
+    margin-top: 200px;
+}
+.features .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.features .image{
+    display: flex;
+    gap: 30px;
+
+}
+.features .image img{
+    object-fit: cover;
+    height: 404px;
+    width: 270px;
+    border-radius: 16px;
+    background:  lightgray 50% / cover no-repeat;
+}
+.features .image .img1{
+    margin-top: 30px;
+}
+
+.features .info{
+    width: 41%;
+    
+   
+}
+.features .info h2{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+.features .info .desc-1 , .decs-2{
+    color: #5F5B53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    margin-top: 16px;
+}
+.features .info .btn{
+    width: 137px;
+    background: var(--primary);
+    margin-top: 32px;
 }
